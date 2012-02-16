@@ -56,6 +56,6 @@ class Model_Check extends Commoneer_ORM
         $r = $v->validate($url);
 
 
-        return array('errors' => $r->errors, 'warnings' => $r->warnings);
+        return array('errors' => count($r->errors), 'warnings' => count($r->warnings));
     }
 }
