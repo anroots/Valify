@@ -79,7 +79,7 @@ if (isset($_SERVER['KOHANA_ENV'])) {
  */
 
 $config = array(
-    'base_url' => '/valify/',
+    'base_url' => '/',
     'profile' => FALSE,
     'caching' => TRUE,
     'errors' => FALSE,

@@ -12,7 +12,8 @@ class Controller_Dash extends Controller_Main
         $this->content->sites = ORM::factory('site')
             ->find_all();
         $this->content->checks = ORM::factory('check')
-        ->group_by('site_id')
+            ->order_by('date', 'desc')
+            ->group_by('site_id')
             ->find_all();
     }
 } 

@@ -14,8 +14,10 @@ class Controller_Check extends Controller
         if (!$c) {
             $this->response->body(__('Error'));
         } else {
-            $str = trim(implode(', ', $c), ', ');
-            $this->response->body(__('Checked sites :sites.', array(':sites' => $str)));
+            if ($this->request->query('debug')) {
+                $str = trim(implode(', ', $c), ', ');
+                $this->response->body(__('Checked sites :sites.', array(':sites' => $str)));
+            }
         }
     }
 } 

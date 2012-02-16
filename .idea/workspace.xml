@@ -22,10 +22,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="bootstrap.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="bootstrap.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/php/application/bootstrap.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="81" column="27" selection-start="2487" selection-end="2487" vertical-scroll-proportion="0.23809524">
+            <state line="81" column="19" selection-start="2479" selection-end="2479" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -35,6 +35,15 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
             <state line="2" column="45" selection-start="55" selection-end="55" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="check.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/php/application/classes/controller/check.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="13" selection-start="539" selection-end="539" vertical-scroll-proportion="0.5026455">
               <folding />
             </state>
           </provider>
@@ -52,7 +61,7 @@
       <file leaf-file-name="dash.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/php/application/classes/controller/dash.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="29" selection-start="356" selection-end="356" vertical-scroll-proportion="-3.6842105">
+            <state line="15" column="31" selection-start="397" selection-end="397" vertical-scroll-proportion="-3.9473684">
               <folding />
             </state>
           </provider>
@@ -73,7 +82,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/application/classes/model/post.php" />
         <option value="$PROJECT_DIR$/application/classes/controller/main.php" />
         <option value="$PROJECT_DIR$/application/bootstrap.php" />
         <option value="$PROJECT_DIR$/.htaccess" />
@@ -89,6 +97,7 @@
         <option value="$PROJECT_DIR$/php/application/classes/model/check.php" />
         <option value="$PROJECT_DIR$/php/application/classes/controller/dash.php" />
         <option value="$PROJECT_DIR$/php/application/bootstrap.php" />
+        <option value="$PROJECT_DIR$/php/application/classes/controller/check.php" />
       </list>
     </option>
   </component>
@@ -367,9 +376,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
+    <entry file="file://$PROJECT_DIR$/php/application/bootstrap.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="45" selection-start="55" selection-end="55" vertical-scroll-proportion="0.0">
+        <state line="81" column="19" selection-start="2479" selection-end="2479" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -383,14 +392,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/php/application/classes/controller/dash.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="29" selection-start="356" selection-end="356" vertical-scroll-proportion="-3.6842105">
+        <state line="15" column="31" selection-start="397" selection-end="397" vertical-scroll-proportion="-3.9473684">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php/application/bootstrap.php">
+    <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="81" column="27" selection-start="2487" selection-end="2487" vertical-scroll-proportion="0.23809524">
+        <state line="2" column="45" selection-start="55" selection-end="55" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/application/classes/controller/check.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="13" selection-start="539" selection-end="539" vertical-scroll-proportion="0.5026455">
           <folding />
         </state>
       </provider>
