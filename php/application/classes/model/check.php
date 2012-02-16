@@ -11,7 +11,7 @@ class Model_Check extends Commoneer_ORM
         'site' => array()
     );
 
-    public function __construct($id)
+    public function __construct($id = NULL)
     {
         parent::__construct($id);
         require_once 'Services/W3C/HTMLValidator.php';

@@ -85,3 +85,66 @@
 #5 /data/www/kohana/3.2/system/classes/kohana/request.php(1138): Kohana_Request_Client->execute(Object(Request))
 #6 /data/www/valify/index.php(106): Kohana_Request->execute()
 #7 {main}
+2012-02-16 09:23:02 --- ERROR: Services_W3C_HTMLValidator_Exception [ 0 ]: Error sending request to the validator ~ /usr/share/php/Services/W3C/HTMLValidator.php [ 356 ]
+2012-02-16 09:23:02 --- STRACE: Services_W3C_HTMLValidator_Exception [ 0 ]: Error sending request to the validator ~ /usr/share/php/Services/W3C/HTMLValidator.php [ 356 ]
+--
+#0 /usr/share/php/Services/W3C/HTMLValidator.php(213): Services_W3C_HTMLValidator->sendRequest()
+#1 /data/www/valify/application/classes/model/check.php(56): Services_W3C_HTMLValidator->validate('http://delfi.ee')
+#2 /data/www/valify/application/classes/model/check.php(32): Model_Check->_w3c('http://delfi.ee')
+#3 /data/www/valify/application/classes/controller/check.php(13): Model_Check->run()
+#4 [internal function]: Controller_Check->action_index()
+#5 /data/www/kohana/3.2/system/classes/kohana/request/client/internal.php(118): ReflectionMethod->invoke(Object(Controller_Check))
+#6 /data/www/kohana/3.2/system/classes/kohana/request/client.php(64): Kohana_Request_Client_Internal->execute_request(Object(Request))
+#7 /data/www/kohana/3.2/system/classes/kohana/request.php(1138): Kohana_Request_Client->execute(Object(Request))
+#8 /data/www/valify/index.php(106): Kohana_Request->execute()
+#9 {main}
+2012-02-16 09:23:43 --- ERROR: Services_W3C_HTMLValidator_Exception [ 0 ]: Error sending request to the validator ~ /usr/share/php/Services/W3C/HTMLValidator.php [ 356 ]
+2012-02-16 09:23:43 --- STRACE: Services_W3C_HTMLValidator_Exception [ 0 ]: Error sending request to the validator ~ /usr/share/php/Services/W3C/HTMLValidator.php [ 356 ]
+--
+#0 /usr/share/php/Services/W3C/HTMLValidator.php(213): Services_W3C_HTMLValidator->sendRequest()
+#1 /data/www/valify/application/classes/model/check.php(56): Services_W3C_HTMLValidator->validate('http://delfi.ee')
+#2 /data/www/valify/application/classes/model/check.php(32): Model_Check->_w3c('http://delfi.ee')
+#3 /data/www/valify/application/classes/controller/check.php(13): Model_Check->run()
+#4 [internal function]: Controller_Check->action_index()
+#5 /data/www/kohana/3.2/system/classes/kohana/request/client/internal.php(118): ReflectionMethod->invoke(Object(Controller_Check))
+#6 /data/www/kohana/3.2/system/classes/kohana/request/client.php(64): Kohana_Request_Client_Internal->execute_request(Object(Request))
+#7 /data/www/kohana/3.2/system/classes/kohana/request.php(1138): Kohana_Request_Client->execute(Object(Request))
+#8 /data/www/valify/index.php(106): Kohana_Request->execute()
+#9 {main}
+2012-02-16 09:25:07 --- ERROR: ErrorException [ 2 ]: Missing argument 1 for Model_Check::__construct() ~ APPPATH/classes/model/check.php [ 14 ]
+2012-02-16 09:25:07 --- STRACE: ErrorException [ 2 ]: Missing argument 1 for Model_Check::__construct() ~ APPPATH/classes/model/check.php [ 14 ]
+--
+#0 /data/www/valify/application/classes/model/check.php(14): Kohana_Core::error_handler(2, 'Missing argumen...', '/data/www/valif...', 14, Array)
+#1 [internal function]: Model_Check->__construct()
+#2 /data/www/kohana/3.2/modules/database/classes/kohana/database/mysql/result.php(62): mysql_fetch_object(Resource id #96, 'Model_Check', NULL)
+#3 /data/www/valify/application/views/dash/index.php(32): Kohana_Database_MySQL_Result->current()
+#4 /data/www/kohana/3.2/system/classes/kohana/view.php(61): include('/data/www/valif...')
+#5 /data/www/kohana/3.2/system/classes/kohana/view.php(343): Kohana_View::capture('/data/www/valif...', Array)
+#6 /data/www/kohana/3.2/system/classes/kohana/view.php(228): Kohana_View->render()
+#7 /data/www/valify/application/views/templates/theme.php(34): Kohana_View->__toString()
+#8 /data/www/kohana/3.2/system/classes/kohana/view.php(61): include('/data/www/valif...')
+#9 /data/www/kohana/3.2/system/classes/kohana/view.php(343): Kohana_View::capture('/data/www/valif...', Array)
+#10 /data/www/kohana/3.2/system/classes/kohana/controller/template.php(44): Kohana_View->render()
+#11 /data/www/kohana/3.2/modules/commoneer-1.4/classes/commoneer/controller/template.php(155): Kohana_Controller_Template->after()
+#12 [internal function]: Commoneer_Controller_Template->after()
+#13 /data/www/kohana/3.2/system/classes/kohana/request/client/internal.php(121): ReflectionMethod->invoke(Object(Controller_Dash))
+#14 /data/www/kohana/3.2/system/classes/kohana/request/client.php(64): Kohana_Request_Client_Internal->execute_request(Object(Request))
+#15 /data/www/kohana/3.2/system/classes/kohana/request.php(1138): Kohana_Request_Client->execute(Object(Request))
+#16 /data/www/valify/index.php(106): Kohana_Request->execute()
+#17 {main}
+2012-02-16 09:28:03 --- ERROR: ErrorException [ 2 ]: trim() expects parameter 1 to be string, array given ~ MODPATH/orm/classes/kohana/orm.php [ 1118 ]
+2012-02-16 09:28:03 --- STRACE: ErrorException [ 2 ]: trim() expects parameter 1 to be string, array given ~ MODPATH/orm/classes/kohana/orm.php [ 1118 ]
+--
+#0 [internal function]: Kohana_Core::error_handler(2, 'trim() expects ...', '/data/www/kohan...', 1118, Array)
+#1 [internal function]: trim(Array)
+#2 /data/www/kohana/3.2/modules/orm/classes/kohana/orm.php(1118): ReflectionFunction->invokeArgs(Array)
+#3 /data/www/kohana/3.2/modules/orm/classes/kohana/orm.php(655): Kohana_ORM->run_filter('errors', Array)
+#4 /data/www/kohana/3.2/modules/orm/classes/kohana/orm.php(634): Kohana_ORM->set('errors', Array)
+#5 /data/www/valify/application/classes/model/check.php(36): Kohana_ORM->__set('errors', Array)
+#6 /data/www/valify/application/classes/controller/check.php(13): Model_Check->run()
+#7 [internal function]: Controller_Check->action_index()
+#8 /data/www/kohana/3.2/system/classes/kohana/request/client/internal.php(118): ReflectionMethod->invoke(Object(Controller_Check))
+#9 /data/www/kohana/3.2/system/classes/kohana/request/client.php(64): Kohana_Request_Client_Internal->execute_request(Object(Request))
+#10 /data/www/kohana/3.2/system/classes/kohana/request.php(1138): Kohana_Request_Client->execute(Object(Request))
+#11 /data/www/valify/index.php(106): Kohana_Request->execute()
+#12 {main}
