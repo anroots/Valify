@@ -148,3 +148,44 @@
 #10 /data/www/kohana/3.2/system/classes/kohana/request.php(1138): Kohana_Request_Client->execute(Object(Request))
 #11 /data/www/valify/index.php(106): Kohana_Request->execute()
 #12 {main}
+2012-02-16 10:12:24 --- ERROR: HTTP_Exception_404 [ 404 ]: The requested URL valify was not found on this server. ~ SYSPATH/classes/kohana/request/client/internal.php [ 87 ]
+2012-02-16 10:12:24 --- STRACE: HTTP_Exception_404 [ 404 ]: The requested URL valify was not found on this server. ~ SYSPATH/classes/kohana/request/client/internal.php [ 87 ]
+--
+#0 /data/www/kohana/3.2/system/classes/kohana/request/client.php(64): Kohana_Request_Client_Internal->execute_request(Object(Request))
+#1 /data/www/kohana/3.2/system/classes/kohana/request.php(1138): Kohana_Request_Client->execute(Object(Request))
+#2 /data/www/valify/index.php(106): Kohana_Request->execute()
+#3 {main}
+2012-02-16 10:12:27 --- ERROR: HTTP_Exception_404 [ 404 ]: The requested URL valify was not found on this server. ~ SYSPATH/classes/kohana/request/client/internal.php [ 87 ]
+2012-02-16 10:12:27 --- STRACE: HTTP_Exception_404 [ 404 ]: The requested URL valify was not found on this server. ~ SYSPATH/classes/kohana/request/client/internal.php [ 87 ]
+--
+#0 /data/www/kohana/3.2/system/classes/kohana/request/client.php(64): Kohana_Request_Client_Internal->execute_request(Object(Request))
+#1 /data/www/kohana/3.2/system/classes/kohana/request.php(1138): Kohana_Request_Client->execute(Object(Request))
+#2 /data/www/valify/index.php(106): Kohana_Request->execute()
+#3 {main}
+2012-02-16 10:12:40 --- ERROR: HTTP_Exception_404 [ 404 ]: The requested URL valify was not found on this server. ~ SYSPATH/classes/kohana/request/client/internal.php [ 87 ]
+2012-02-16 10:12:40 --- STRACE: HTTP_Exception_404 [ 404 ]: The requested URL valify was not found on this server. ~ SYSPATH/classes/kohana/request/client/internal.php [ 87 ]
+--
+#0 /data/www/kohana/3.2/system/classes/kohana/request/client.php(64): Kohana_Request_Client_Internal->execute_request(Object(Request))
+#1 /data/www/kohana/3.2/system/classes/kohana/request.php(1138): Kohana_Request_Client->execute(Object(Request))
+#2 /data/www/valify/index.php(106): Kohana_Request->execute()
+#3 {main}
+2012-02-16 10:13:01 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: assets/shared/libs/bootstrap-2.0/css/bootstrap.min.css ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+2012-02-16 10:13:01 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: assets/shared/libs/bootstrap-2.0/css/bootstrap.min.css ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+--
+#0 /data/www/valify/index.php(106): Kohana_Request->execute()
+#1 {main}
+2012-02-16 10:13:01 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: assets/shared/libs/bootstrap-2.0/js/bootstrap.min.js ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+2012-02-16 10:13:01 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: assets/shared/libs/bootstrap-2.0/js/bootstrap.min.js ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+--
+#0 /data/www/valify/index.php(106): Kohana_Request->execute()
+#1 {main}
+2012-02-16 10:13:01 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: assets/shared/js/libs/modernizr-2.0.6.min.js ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+2012-02-16 10:13:01 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: assets/shared/js/libs/modernizr-2.0.6.min.js ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+--
+#0 /data/www/valify/index.php(106): Kohana_Request->execute()
+#1 {main}
+2012-02-16 10:13:01 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: assets/shared/js/libs/jquery-1.7.1.min.js ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+2012-02-16 10:13:01 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: assets/shared/js/libs/jquery-1.7.1.min.js ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+--
+#0 /data/www/valify/index.php(106): Kohana_Request->execute()
+#1 {main}

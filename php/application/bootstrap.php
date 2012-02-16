@@ -79,7 +79,7 @@ if (isset($_SERVER['KOHANA_ENV'])) {
  */
 
 $config = array(
-    'base_url' => '/',
+    'base_url' => '/valify/',
     'profile' => FALSE,
     'caching' => TRUE,
     'errors' => FALSE,
@@ -89,7 +89,7 @@ $config = array(
 if (Kohana::$environment == Kohana::DEVELOPMENT) {
 
     $config = array(
-        'base_url' => '/valify/php/',
+        'base_url' => '/valify/',
         'profile' => TRUE,
         'caching' => FALSE,
         'errors' => TRUE,
