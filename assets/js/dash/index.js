@@ -23,7 +23,6 @@ function drawChart() {
                 var i;
                 for (i = 0; i < checkRows.length; i++) {
                     checkRows[i][0] = new Date(checkRows[i][0]*1000);
-                    console.debug(checkRows[i][0]);
                 }
             } else {
                 alert('Could not retreive check data.');

@@ -1,7 +1,7 @@
-<div style="margin-top: 100px"></div>
+<div style="margin-top: 20px"></div>
 
 <h4>
-    <?=__('Did you know that the code used to display :site_name currently has <em>:errors</em> errors and <em>:warnings</em> warnings?', array(
+    <?=__('Did you know that the code used to display :site_name contains <em>:errors</em> errors and <em>:warnings</em> warnings?', array(
     ':errors' => $last_check->errors,
     ':warnings' => $last_check->warnings,
     ':site_name' => $site->url
