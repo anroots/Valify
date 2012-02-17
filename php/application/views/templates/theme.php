@@ -16,7 +16,7 @@
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script type="text/javascript">
-        var base_url = '/valify/';
+        var base_url = '<?=URL::base()?>';
         var site_id = 1;
     </script>
 </head>
@@ -46,7 +46,6 @@
     </div>
 
 </div>
-<script src="<?URL::base()?>assets/shared/libs/bootstrap-2.0/js/bootstrap.min.js" type="text/javascript"></script>
 <script type="text/javascript" src="https://www.google.com/jsapi"></script>
 <?=Assets::render(Assets::SCRIPT)?>
 </html>
