@@ -31,10 +31,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="theme.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="theme.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/php/application/views/templates/theme.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="41" selection-start="710" selection-end="710" vertical-scroll-proportion="0.44751382">
+            <state line="18" column="41" selection-start="710" selection-end="710" vertical-scroll-proportion="-10.125">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="check.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php/application/classes/controller/check.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="37" column="52" selection-start="933" selection-end="933" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -49,10 +58,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/js/dash/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="52" column="24" selection-start="1272" selection-end="1272" vertical-scroll-proportion="0.0">
+            <state line="51" column="26" selection-start="1220" selection-end="1220" vertical-scroll-proportion="0.41798943">
               <folding />
             </state>
           </provider>
@@ -92,12 +101,12 @@
         <option value="$PROJECT_DIR$/php/application/classes/model/site.php" />
         <option value="$PROJECT_DIR$/php/application/classes/controller/dash.php" />
         <option value="$PROJECT_DIR$/assets/index.js" />
-        <option value="$PROJECT_DIR$/php/application/classes/controller/check.php" />
         <option value="$PROJECT_DIR$/php/application/views/dash/index.php" />
         <option value="$PROJECT_DIR$/assets/css/theme.css" />
         <option value="$PROJECT_DIR$/assets/css/bootstrap2.css" />
-        <option value="$PROJECT_DIR$/assets/js/dash/index.js" />
         <option value="$PROJECT_DIR$/php/application/views/templates/theme.php" />
+        <option value="$PROJECT_DIR$/php/application/classes/controller/check.php" />
+        <option value="$PROJECT_DIR$/assets/js/dash/index.js" />
       </list>
     </option>
   </component>
@@ -167,6 +176,54 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="valify" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="valify" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="php" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="classes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="valify" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="valify" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="php" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="classes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controller" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -299,7 +356,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="16" width="1383" height="759" extended-state="0" />
+    <frame x="-9" y="16" width="1383" height="759" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -391,13 +448,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php/application/classes/controller/check.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="81" selection-start="962" selection-end="962" vertical-scroll-proportion="0.6825397">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/php/application/classes/controller/dash.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="0" selection-start="346" selection-end="346" vertical-scroll-proportion="0.3968254">
@@ -433,13 +483,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/dash/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="24" selection-start="1272" selection-end="1272" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/php/application/bootstrap.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="86" column="2" selection-start="2581" selection-end="2581" vertical-scroll-proportion="0.0">
@@ -449,7 +492,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/php/application/views/templates/theme.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="41" selection-start="710" selection-end="710" vertical-scroll-proportion="0.44751382">
+        <state line="18" column="41" selection-start="710" selection-end="710" vertical-scroll-proportion="-10.125">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/application/classes/controller/check.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="52" selection-start="933" selection-end="933" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/dash/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="26" selection-start="1220" selection-end="1220" vertical-scroll-proportion="0.41798943">
           <folding />
         </state>
       </provider>

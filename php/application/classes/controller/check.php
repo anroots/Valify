@@ -35,7 +35,7 @@ class Controller_Check extends Controller_Ajax
         $data = array();
 
         foreach ($c as $check) {
-            $data[] = array(strtotime($check->date), (int)$check->warnings, (int)$check->errors);
+            $data[] = array(strtotime($check->date), (int)$check->errors);
         }
 
         $this->respond(Controller_Ajax::STATUS_OK, $data);

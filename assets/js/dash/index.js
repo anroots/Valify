@@ -33,7 +33,6 @@ function drawChart() {
     var data = new google.visualization.DataTable();
 
     data.addColumn('date', 'Date');
-    data.addColumn('number', 'Warnings');
     data.addColumn('number', 'Errors');
 
     data.addRows(checkRows);
@@ -42,7 +41,7 @@ function drawChart() {
 
         height:240,
         pointSize:4,
-        title:'Error and warning count over time',
+        title:'Error count over time',
         tooltip:{
             trigger:'hover'
         },
@@ -50,7 +49,7 @@ function drawChart() {
         vAxis:{
             minValue:1,
             format:'##',
-            title:'Count'
+            title:'Errors'
         },
         hAxis:{
             'title':'Time'
