@@ -6,19 +6,18 @@
 <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
     <title><?=$title?></title>
 
     <meta name="viewport" content="width=device-width,initial-scale=1">
 
-    <link rel="stylesheet" href="<?=URL::base()?>assets/shared/libs/bootstrap-2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="<?=URL::base()?>assets/css/bootstrap2.css">
     <!-- end CSS-->
 
-    <script src="<?=URL::base()?>assets/shared/js/libs/modernizr-2.0.6.min.js"></script>
-    <script src="<?=URL::base()?>assets/shared/js/libs/jquery-1.7.1.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script type="text/javascript">
-        var base_url = '/';
+        var base_url = '/valify/';
+        var site_id = 1;
     </script>
 </head>
 
@@ -29,7 +28,7 @@
 
     <!-- Main content -->
     <div class="row">
-        <div class="span7 offset3">
+        <div class="span6 offset4">
             <div id="main">
                 <?=$content?>
             </div>
@@ -48,4 +47,6 @@
 
 </div>
 <script src="<?URL::base()?>assets/shared/libs/bootstrap-2.0/js/bootstrap.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+<?=Assets::render(Assets::SCRIPT)?>
 </html>
