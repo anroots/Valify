@@ -34,7 +34,7 @@
       <file leaf-file-name="theme.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/php/application/views/templates/theme.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="41" selection-start="710" selection-end="710" vertical-scroll-proportion="-10.125">
+            <state line="30" column="33" selection-start="881" selection-end="881" vertical-scroll-proportion="-6.375">
               <folding />
             </state>
           </provider>
@@ -61,7 +61,7 @@
       <file leaf-file-name="index.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/js/dash/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="26" selection-start="1220" selection-end="1220" vertical-scroll-proportion="0.41798943">
+            <state line="24" column="67" selection-start="624" selection-end="624" vertical-scroll-proportion="0.4973545">
               <folding />
             </state>
           </provider>
@@ -104,8 +104,8 @@
         <option value="$PROJECT_DIR$/php/application/views/dash/index.php" />
         <option value="$PROJECT_DIR$/assets/css/theme.css" />
         <option value="$PROJECT_DIR$/assets/css/bootstrap2.css" />
-        <option value="$PROJECT_DIR$/php/application/views/templates/theme.php" />
         <option value="$PROJECT_DIR$/php/application/classes/controller/check.php" />
+        <option value="$PROJECT_DIR$/php/application/views/templates/theme.php" />
         <option value="$PROJECT_DIR$/assets/js/dash/index.js" />
       </list>
     </option>
@@ -492,7 +492,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/php/application/views/templates/theme.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="41" selection-start="710" selection-end="710" vertical-scroll-proportion="-10.125">
+        <state line="30" column="33" selection-start="881" selection-end="881" vertical-scroll-proportion="-6.375">
           <folding />
         </state>
       </provider>
@@ -506,7 +506,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/dash/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="26" selection-start="1220" selection-end="1220" vertical-scroll-proportion="0.41798943">
+        <state line="24" column="67" selection-start="624" selection-end="624" vertical-scroll-proportion="0.4973545">
           <folding />
         </state>
       </provider>

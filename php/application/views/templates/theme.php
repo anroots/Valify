@@ -28,7 +28,7 @@
 
     <!-- Main content -->
     <div class="row">
-        <div class="span6 offset4">
+        <div class="span8 offset2">
             <div id="main">
                 <?=$content?>
             </div>

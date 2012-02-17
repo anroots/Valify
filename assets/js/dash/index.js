@@ -22,14 +22,15 @@ function drawChart() {
                 // Convert string date to JS Date objects
                 var i;
                 for (i = 0; i < checkRows.length; i++) {
-                    checkRows[i][0] = new Date(checkRows[i][0]);
+                    checkRows[i][0] = new Date(checkRows[i][0]*1000);
+                    console.debug(checkRows[i][0]);
                 }
             } else {
                 alert('Could not retreive check data.');
             }
         }
     });
-    console.debug(checkRows);
+
     var data = new google.visualization.DataTable();
 
     data.addColumn('date', 'Date');
@@ -39,7 +40,8 @@ function drawChart() {
 
     var options = {
 
-        height:240,
+        height:500,
+        width:900,
         pointSize:4,
         title:'Error count over time',
         tooltip:{
