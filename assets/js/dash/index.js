@@ -41,14 +41,13 @@ function drawChart() {
 
         height:500,
         width:900,
-        pointSize:4,
+        pointSize:2,
         title:'Error count over time',
         tooltip:{
             trigger:'hover'
         },
         curveType:'function',
         vAxis:{
-            minValue:1,
             format:'##',
             title:'Errors'
         },
