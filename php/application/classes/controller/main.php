@@ -6,9 +6,10 @@
 class Controller_Main extends Commoneer_Controller_Template
 {
 
-    public function before() {
+    public function before()
+    {
         parent::before();
-
+        View::set_global('sites', ORM::factory('site')->get()->as_array('id', 'url'));
     }
 
 }

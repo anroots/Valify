@@ -22,7 +22,7 @@ function drawChart() {
                 // Convert string date to JS Date objects
                 var i;
                 for (i = 0; i < checkRows.length; i++) {
-                    checkRows[i][0] = new Date(checkRows[i][0]*1000);
+                    checkRows[i][0] = new Date(checkRows[i][0] * 1000);
                 }
             } else {
                 alert('Could not retreive check data.');
@@ -65,4 +65,8 @@ function drawChart() {
 
 $(document).ready(function () {
     drawChart();
+
+    $('select[name="site_id"]').change(function () {
+        window.location.href = base_url + '?site_id=' + $(this).val();
+    });
 });

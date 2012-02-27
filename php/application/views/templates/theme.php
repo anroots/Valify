@@ -17,18 +17,25 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script type="text/javascript">
         var base_url = '<?=URL::base()?>';
-        var site_id = 1;
+        var site_id = <?=Request::current()->query('site_id') ? Request::current()->query('site_id') : 1?>;
     </script>
 </head>
 
-<body>
-
+<body style="padding-top: 20px;">
 
 <div class="container-fluid">
+    <div class="row">
+        <div class="span2 offset10">
+            <label for="site_id">
+                <?=__('Select a site...')?>
+            </label>
+            <?=Form::select('site_id', $sites, Request::current()->query('site_id'), array('id' => 'site_id'))?>
+        </div>
+    </div>
 
     <!-- Main content -->
     <div class="row">
-        <div class="span8 offset2">
+        <div class="span12">
             <div id="main">
                 <?=$content?>
             </div>
