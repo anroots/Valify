@@ -23,3 +23,12 @@
 #12 /data/www/kohana/3.2/system/classes/kohana/request.php(1138): Kohana_Request_Client->execute(Object(Request))
 #13 /data/www/valify/index.php(106): Kohana_Request->execute()
 #14 {main}
+2012-03-03 17:50:37 --- ERROR: Exception_Not_Implemented [ 501 ]: Function 'action_stats' is not yet implemented! ~ APPPATH/classes/controller/dash.php [ 22 ]
+2012-03-03 17:50:37 --- STRACE: Exception_Not_Implemented [ 501 ]: Function 'action_stats' is not yet implemented! ~ APPPATH/classes/controller/dash.php [ 22 ]
+--
+#0 [internal function]: Controller_Dash->action_stats()
+#1 /data/www/kohana/3.2/system/classes/kohana/request/client/internal.php(118): ReflectionMethod->invoke(Object(Controller_Dash))
+#2 /data/www/kohana/3.2/system/classes/kohana/request/client.php(64): Kohana_Request_Client_Internal->execute_request(Object(Request))
+#3 /data/www/kohana/3.2/system/classes/kohana/request.php(1138): Kohana_Request_Client->execute(Object(Request))
+#4 /data/www/valify/index.php(106): Kohana_Request->execute()
+#5 {main}

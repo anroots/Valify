@@ -19,6 +19,7 @@ class Controller_Dash extends Controller_Main
 
     public function action_stats()
     {
+        throw new Exception_Not_Implemented();
         $this->content->sites = ORM::factory('site')
             ->find_all();
         $this->content->checks = ORM::factory('check')
