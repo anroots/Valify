@@ -12,7 +12,6 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
 
     <link rel="stylesheet" href="<?=URL::base()?>assets/css/bootstrap2.css">
-    <!-- end CSS-->
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script type="text/javascript">
@@ -48,6 +47,9 @@
             <footer>
                 <?=Kohana::$config->load('app.title')?> version <?=Kohana::$config->load('app.version')?> |
                 <a href="https://github.com/anroots/valify" title="GitHub">GitHub</a>
+                <a href="http://www.w3.org/html/logo/">
+                    <img src="http://www.w3.org/html/logo/badge/html5-badge-h-css3-semantics.png" width="165" height="64" alt="HTML5 Powered with CSS3 / Styling, and Semantics" title="HTML5 Powered with CSS3 / Styling, and Semantics">
+                </a>
             </footer>
         </div>
     </div>
@@ -55,4 +57,5 @@
 </div>
 <script type="text/javascript" src="https://www.google.com/jsapi"></script>
 <?=Assets::render(Assets::SCRIPT)?>
+</body>
 </html>
