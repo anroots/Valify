@@ -16,7 +16,7 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script type="text/javascript">
         var base_url = '<?=URL::base()?>';
-        var site_id = <?=Request::current()->query('site_id') ? Request::current()->query('site_id') : 1?>;
+        var site_id = <?=Model_Site::current()->id?>;
     </script>
 </head>
 
@@ -28,7 +28,7 @@
             <label for="site_id">
                 <?=__('Select a site...')?>
             </label>
-            <?=Form::select('site_id', $sites, Request::current()->query('site_id'), array('id' => 'site_id'))?>
+            <?=Form::select('site_id', $sites, Model_Site::current()->id, array('id' => 'site_id'))?>
         </div>
     </div>
 
@@ -48,7 +48,9 @@
                 <?=Kohana::$config->load('app.title')?> version <?=Kohana::$config->load('app.version')?> |
                 <a href="https://github.com/anroots/valify" title="GitHub">GitHub</a>
                 <a href="http://www.w3.org/html/logo/">
-                    <img src="http://www.w3.org/html/logo/badge/html5-badge-h-css3-semantics.png" width="165" height="64" alt="HTML5 Powered with CSS3 / Styling, and Semantics" title="HTML5 Powered with CSS3 / Styling, and Semantics">
+                    <img src="http://www.w3.org/html/logo/badge/html5-badge-h-css3-semantics.png" width="165"
+                         height="64" alt="HTML5 Powered with CSS3 / Styling, and Semantics"
+                         title="HTML5 Powered with CSS3 / Styling, and Semantics">
                 </a>
             </footer>
         </div>
