@@ -45,28 +45,10 @@ $config =  array
 		'caching'      => FALSE,
 		'profiling'    => FALSE,
 	),
-    'production' => array
-	(
-		'type'       => 'mysql',
-		'connection' => array(
-
-			'hostname'   => 'localhost',
-			'database'   => 'diara_riito',
-			'username'   => 'arendus',
-			'password'   => 'vaarikas',
-			'persistent' => FALSE,
-		),
-		'table_prefix' => '',
-		'charset'      => 'utf8',
-		'caching'      => FALSE,
-		'profiling'    => FALSE,
-	),
 );
 
 if (Kohana::$environment == Kohana::DEVELOPMENT) {
     $config['default'] = $config['development'];
-} elseif (Kohana::$environment == Kohana::STAGING) {
-    $config['default'] = $config['staging'];
 }
 
 return $config;
