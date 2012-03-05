@@ -1,6 +1,6 @@
 # Valify
 
-A hybrid multifunctional website checker app.
+Show historical graph with W3C validation error counts for a particular website.
 
 # Licence
 
