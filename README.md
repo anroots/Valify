@@ -1,6 +1,13 @@
 # Valify
 
-Show historical graph with W3C validation error counts for a particular website.
+Periodically check a list of websites for W3C HTML standards compliance and show a historic graph with error counts.
+
+![Valify example graph](assets/img/screenshot1.jpg "Example graph with historical data")
+
+# Motivation
+
+* Track large public sites that seem to waive standards
+* Track personal projects to detect unnoticed errors
 
 # Licence
 
