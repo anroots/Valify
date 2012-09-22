@@ -2,7 +2,7 @@
 
 Periodically check a list of websites for W3C HTML standards compliance and show a historic graph with error counts.
 
-![Valify example graph](assets/img/screenshot1.png "Example graph with historical data")
+![Valify example graph](https://raw.github.com/anroots/Valify/master/assets/img/screenshot1.png "Example graph with historical data")
 
 # Motivation
 
