@@ -11,7 +11,7 @@
 
     <meta name="viewport" content="width=device-width,initial-scale=1">
 
-    <link rel="stylesheet" href="<?=URL::base()?>assets/css/bootstrap2.css">
+    <link rel="stylesheet" href="<?=URL::base()?>assets/css/bootstrap/css/bootstrap.min.css">
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script type="text/javascript">

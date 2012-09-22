@@ -4,27 +4,26 @@
  * @since 0.1
  * @package Valify
  */
-class Controller_Dash extends Controller_Main
-{
+class Controller_Dash extends Controller_Main {
 
-    public function action_index()
-    {
+	public function action_index()
+	{
 
-        $site_id = $this->request->query('site_id') ? $this->request->query('site_id') : 1;
+		$site_id = $this->request->query('site_id') ? $this->request->query('site_id') : 1;
 
-        $this->content->site = ORM::factory('site', $site_id);
-        $this->content->last_check = $this->content->site->last_check();
+		$this->content->site = ORM::factory('site', $site_id);
+		$this->content->last_check = $this->content->site->last_check();
 
-    }
+	}
 
-    public function action_stats()
-    {
-        throw new Exception_Not_Implemented();
-        $this->content->sites = ORM::factory('site')
-            ->find_all();
-        $this->content->checks = ORM::factory('check')
-            ->order_by('date', 'desc')
-            ->group_by('site_id')
-            ->find_all();
-    }
+	public function action_stats()
+	{
+		throw new Exception_Not_Implemented();
+		$this->content->sites = ORM::factory('site')
+			->find_all();
+		$this->content->checks = ORM::factory('check')
+			->order_by('date', 'desc')
+			->group_by('site_id')
+			->find_all();
+	}
 } 
