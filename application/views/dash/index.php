@@ -1,6 +1,6 @@
 <div class="alert">
     <p>
-		<?=__('On :date, the code used to render <strong>:site_name</strong>
+		<?=__('On :date, the HTML code used to render <strong>:site_name</strong>
      contained <strong>:errors errors</strong> and <strong>:warnings warnings</strong>,
       according to the :link.', array(
 		':errors'    => $last_check->errors,

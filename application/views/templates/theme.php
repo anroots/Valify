@@ -12,6 +12,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
 
     <link rel="stylesheet" href="<?=URL::base()?>assets/css/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="<?=URL::base()?>assets/css/bootstrap/css/bootstrap-responsive.min.css">
 
     <style type="text/css">
         body {
@@ -24,9 +25,7 @@
         var base_url = '<?=URL::base()?>';
         var site_id = <?=Model_Site::current()->id?>;
     </script>
-
 </head>
-
 <body>
 
 <div class="navbar navbar-fixed-top">
@@ -41,22 +40,30 @@
 
             <ul class="nav">
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><?=__('Sites')?> <b class="caret"></b></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+						<i class="icon-arrow-down"></i> <?=__('Tracked Sites')?> <b class="caret"></b>
+                    </a>
                     <ul class="dropdown-menu">
 						<?foreach ($sites as $site): ?>
                         <li>
                             <a href="<?=URL::base()?>?site_id=<?=$site->pk()?>">
-                                <i class="icon-share-alt"></i> <?=$site->url?>
+                                <i class="icon-share-alt"></i> <?=$site->name()?>
+                                (<?=$site->last_check()->errors?>)
                             </a>
                         </li>
 						<? endforeach?>
                     </ul>
                 </li>
+	            <li>
+                    <a href="http://validator.w3.org/check?uri=<?=urlencode(Model_Site::current()->url)?>">
+	                    <i class="icon-check"></i> <?=__('Check Now')?>
+                    </a>
+	            </li>
             </ul>
             <ul class="nav pull-right">
                 <li>
                     <a href="https://github.com/anroots/Valify">
-                        <i class="icon-random"></i> <?=__('Fork on GitHub')?>
+                        <i class="icon-random"></i> <?=__('Fork me on GitHub')?>
                     </a>
                 </li>
             </ul>
@@ -65,7 +72,6 @@
 </div>
 
 <div class="container">
-    <!-- Main content -->
 	<?=$content?>
 </div>
 

@@ -25,7 +25,7 @@ function drawChart() {
                     checkRows[i][0] = new Date(checkRows[i][0] * 1000);
                 }
             } else {
-                alert('Could not retreive check data.');
+                alert('Could not retrieve check data.');
             }
         }
     });
@@ -39,7 +39,7 @@ function drawChart() {
 
     var options = {
 
-        height:500,
+        height:480,
         width:900,
         pointSize:2,
         title:'Error count over time',

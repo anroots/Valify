@@ -4,40 +4,41 @@
  * @since 0.1
  * @package Valify
  */
-class Controller_Check extends Controller_Ajax
-{
+class Controller_Check extends Controller_Ajax {
 
-    public function action_index()
-    {
-        $c = ORM::factory('check')
-            ->run();
-        if (!$c) {
-            $this->response->body(__('Error'));
-        } else {
-            if ($this->request->query('debug')) {
-                $str = trim(implode(', ', $c), ', ');
-                $this->response->body(__('Checked sites :sites.', array(':sites' => $str)));
-            }
-        }
-    }
+	public function action_index()
+	{
+		$c = ORM::factory('check')
+			->run();
 
-    public function action_graph()
-    {
+		if (! $c) {
+			$this->response->body(__('Error'));
+		} else {
+			if ($this->request->query('debug')) {
+				$str = trim(implode(', ', $c), ', ');
+				$this->response->body(__('Checked sites :sites.', array(':sites' => $str)));
+			}
+		}
+		die();
+	}
 
-        $c = ORM::factory('check')
-            ->where('site_id', '=', (int)$this->id)
-            ->find_all();
+	public function action_graph()
+	{
 
-        if (!$c->count()) {
-            $this->respond(Controller_Ajax::STATUS_BAD_REQUEST);
-        }
+		$c = ORM::factory('check')
+			->where('site_id', '=', (int) $this->id)
+			->find_all();
 
-        $data = array();
+		if (! $c->count()) {
+			$this->respond(Controller_Ajax::STATUS_BAD_REQUEST);
+		}
 
-        foreach ($c as $check) {
-            $data[] = array(strtotime($check->date), (int)$check->errors);
-        }
+		$data = array();
 
-        $this->respond(Controller_Ajax::STATUS_OK, $data);
-    }
+		foreach ($c as $check) {
+			$data[] = array(strtotime($check->date), (int) $check->errors);
+		}
+
+		$this->respond(Controller_Ajax::STATUS_OK, $data);
+	}
 } 
