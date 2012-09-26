@@ -4,41 +4,16 @@
  * @since 0.1
  * @package Valify
  */
-class Controller_Check extends Controller_Ajax {
+class Controller_Check extends Controller {
 
 	public function action_index()
 	{
-		$c = ORM::factory('check')
+		if (! Kohana::$is_cli) {
+			throw new HTTP_Exception_403;
+		}
+
+		ORM::factory('check')
 			->run();
-
-		if (! $c) {
-			$this->response->body(__('Error'));
-		} else {
-			if ($this->request->query('debug')) {
-				$str = trim(implode(', ', $c), ', ');
-				$this->response->body(__('Checked sites :sites.', array(':sites' => $str)));
-			}
-		}
-		die();
+		exit(0);
 	}
-
-	public function action_graph()
-	{
-
-		$c = ORM::factory('check')
-			->where('site_id', '=', (int) $this->id)
-			->find_all();
-
-		if (! $c->count()) {
-			$this->respond(Controller_Ajax::STATUS_BAD_REQUEST);
-		}
-
-		$data = array();
-
-		foreach ($c as $check) {
-			$data[] = array(strtotime($check->date), (int) $check->errors);
-		}
-
-		$this->respond(Controller_Ajax::STATUS_OK, $data);
-	}
-} 
+}

@@ -12,7 +12,7 @@ function drawChart() {
     var checkRows;
 
     $.ajax({
-        url:base_url + 'check/graph/' + site_id,
+        url:base_url + 'dash/graph/' + site_id,
         type:'get',
         async:false,
         success:function (json) { // Fetched all moods

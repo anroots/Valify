@@ -26,7 +26,7 @@ class Model_Check extends Commoneer_ORM {
 	public function run()
 	{
 		$sites = ORM::factory('site')
-			->where('deleted', '=', 1)
+			->where('deleted', '=', 0)
 			->find_all();
 
 		foreach ($sites as $site) {

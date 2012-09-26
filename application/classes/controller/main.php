@@ -3,7 +3,7 @@
  * @since 0.1
  * @package Valify
  */
-class Controller_Main extends Commoneer_Controller_Template {
+class Controller_Main extends Controller_Ajax {
 
 	public function before()
 	{

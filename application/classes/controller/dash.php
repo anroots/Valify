@@ -16,14 +16,23 @@ class Controller_Dash extends Controller_Main {
 
 	}
 
-	public function action_stats()
+	public function action_graph()
 	{
-		throw new Exception_Not_Implemented();
-		$this->content->sites = ORM::factory('site')
+
+		$c = ORM::factory('check')
+			->where('site_id', '=', (int) $this->id)
 			->find_all();
-		$this->content->checks = ORM::factory('check')
-			->order_by('date', 'desc')
-			->group_by('site_id')
-			->find_all();
+
+		if (! $c->count()) {
+			$this->respond(Controller_Ajax::STATUS_BAD_REQUEST);
+		}
+
+		$data = array();
+
+		foreach ($c as $check) {
+			$data[] = array(strtotime($check->date), (int) $check->errors);
+		}
+
+		$this->respond(Controller_Ajax::STATUS_OK, $data);
 	}
 } 
